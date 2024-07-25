@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" aria-label="top navigation bar">
         <div class="logo">James Curtis</div>
         <div>
             <ul class="nav-links">
@@ -22,14 +22,15 @@
         </div>
     </nav>
 
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" aria-label="bottom navigation bar">
 
         <div class="logo">James Curtis</div>
-        <div class="hamburger-icon open" onclick="togglemenu()">
+        <div class="hamburger-icon open" onclick="togglemenu()"><img src="./assets/arrow.png" alt="arrow menu"></div>
         <div class="hamburger-menu" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span>About</span>
+            <span>Experience</span>
+            <span>Projects</span>
+            <span>Contact</span>
         </div>
         <div class="menu-links open">
             <ul>
@@ -42,8 +43,9 @@
     </nav>
     <section id="profile">
     <div class="section__pic-container">
-        <img src="./assets/prile-pic.png" alt="John Doe profile picture"
-
+        <img src="./assets/prile-pic.png" alt="John Doe profile picture">
+    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 
